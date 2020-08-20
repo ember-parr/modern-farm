@@ -9,7 +9,13 @@ let yearlyPlan = createPlan();
 // console.log(yearlyPlan);
 
 
-import { createAsparagus } from "./seeds/asparagus.js"
+// import { usePlants } from './field.js';
+// import { createAsparagus } from './seeds/asparagus.js';
+// import { createSunflower } from './seeds/sunflower.js';
+// const testTwo= usePlants(createAsparagus);
 
-const asparagusSeed = createAsparagus()
-console.log(asparagusSeed)
+// const testOne = usePlants(createSunflower);
+
+
+// console.log("Test One " + testOne);
+// console.log("Test Two " + testTwo);
