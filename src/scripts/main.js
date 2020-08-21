@@ -1,21 +1,29 @@
-console.log("Welcome to the main module")
-
 import { createPlan } from './plan.js';
 
+// testing plan module:
 
-
-let yearlyPlan = createPlan();
-
+//const yearlyPlan = createPlan();
 // console.log(yearlyPlan);
 
 
-// import { usePlants } from './field.js';
-// import { createAsparagus } from './seeds/asparagus.js';
-// import { createSunflower } from './seeds/sunflower.js';
-// const testTwo= usePlants(createAsparagus);
 
-// const testOne = usePlants(createSunflower);
+//testing field module 
+import { usePlants, addPlant } from './field.js';
+import { createAsparagus } from './seeds/asparagus.js';
+import { createPotato } from './seeds/potato.js';
 
 
-// console.log("Test One " + testOne);
-// console.log("Test Two " + testTwo);
+//this creates the seeds
+const asparagus = createAsparagus();
+const potato = createPotato();
+
+
+//this plants the seeds
+addPlant(asparagus);
+addPlant(potato);
+
+//this uses those planted seeds and shows the whole field, i think? 
+const fieldPlanted = usePlants();
+
+console.log(fieldPlanted);
+
