@@ -8,10 +8,15 @@ import { createAsparagus } from './seeds/asparagus.js';
 import { createPotato } from './seeds/potato.js';
 import { plantSeeds } from './tractor.js';
 
-
+console.log("plant those seeds!")
 plantSeeds(yearlyPlan);
 
 
+
+
+import { harvestPlants } from './harvester.js';
+
+// let harvestPrinted = harvestPlants(yearlyPlan);
 
 
 
@@ -31,6 +36,8 @@ addPlant(potato);
 const fieldPlanted = usePlants();
 
 // console.log(fieldPlanted);
+// console.log(fieldPlanted);
 console.log(fieldPlanted);
+console.log("holy long funciton");
 
-
+console.log(harvestPlants(fieldPlanted));

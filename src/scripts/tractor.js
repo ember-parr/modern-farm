@@ -27,12 +27,13 @@ export const plantSeeds = (plantingPlan) => {
             } else if (plant === "Sunflower") {
                 const seed = createSunflower()
                 addPlant(seed)
-            } else {
+            } else if (plant === "Corn") {
                 const seed = createCorn()
                 addPlant(seed[0]),
                 addPlant(seed[1])
+            } else {
+                console.log("there is something wrong with your tractor script")
             }
         }
     }
 }
-
