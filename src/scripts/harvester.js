@@ -1,10 +1,12 @@
-export const harvestPlants = (plants) => {
-    const arrayOfSeeds = [];
+const arrayOfSeeds = [];
+var i;
+
+export const harvestPlants = (plantsArray) => {
+    for (const plants of plantsArray) {
+        for (i = 0; i < plants.output; i++) {
+            arrayOfSeeds.push(plants)
+        }
+    }
     
-    
-    // step 5 and beyond will go here
-
-
-
     return arrayOfSeeds
 }
