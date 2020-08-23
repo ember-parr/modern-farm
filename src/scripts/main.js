@@ -1,43 +1,38 @@
+// creates the initial plan --- an array of seed names
 import { createPlan } from './plan.js';
-const yearlyPlan = createPlan();
-// console.log(yearlyPlan);
+const createdPlan = createPlan();
+console.log("createdPlan output: ");
+console.log(createdPlan)
 
 
-import { usePlants, addPlant } from './field.js';
-import { createAsparagus } from './seeds/asparagus.js';
-import { createPotato } from './seeds/potato.js';
-import { plantSeeds } from './tractor.js';
-
-console.log("plant those seeds!")
-plantSeeds(yearlyPlan);
-
+// uses the plan to plant the seeds 
+// planted seeds are automatically put into an array from usePlants()
+import { plantSeeds } from './tractor.js'
+plantSeeds(createdPlan);
+console.log("plantSeeds output: ");
+console.log(plantSeeds)
 
 
+// contains an array of planted seeds as objects
+import { usePlants } from './field.js';
+const usedPlants = usePlants();
+console.log("usePlants output: ");
+console.log(usedPlants)
 
+
+// iterates over array of planted seeds & puts in array of harvested seeds
+// adds one seed for each output number for that particular plant
 import { harvestPlants } from './harvester.js';
-
-// let harvestPrinted = harvestPlants(yearlyPlan);
-
-
-
+const harvestResult = harvestPlants(usedPlants);
+console.log("harvestedPlantsPlan output: ");
+console.log(harvestResult)
 
 
+// prints the catalog to the html file
+import { Catalog } from './catalog.js';
+let catalogOutput = Catalog();
+console.log(catalogOutput);
 
-//this creates the seeds
-const asparagus = createAsparagus();
-const potato = createPotato();
 
 
-//this plants the seeds
-addPlant(asparagus);
-addPlant(potato);
 
-//this uses those planted seeds and shows the whole field, i think? 
-const fieldPlanted = usePlants();
-
-// console.log(fieldPlanted);
-// console.log(fieldPlanted);
-console.log(fieldPlanted);
-console.log("holy long funciton");
-
-console.log(harvestPlants(fieldPlanted));
