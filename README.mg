@@ -4,4 +4,4 @@
 
 
 ### dataflow screenshot -- drawn on iPad w/ Apple Pencil. Created 8/23/20.
-![data-flow Screengrab](/images/data-flow.jpg)
+![data flow screengrab](/images/data-flow.jpg)
