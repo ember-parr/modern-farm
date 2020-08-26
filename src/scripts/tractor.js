@@ -32,7 +32,7 @@ export const plantSeeds = (plantingPlan) => {
                 addPlant(seed[0]),
                 addPlant(seed[1])
             } else {
-                console.log("there is something wrong with your tractor script")
+                console.log("there is something wrong with your tractor script, you should probably fix that")
             }
         }
     }
