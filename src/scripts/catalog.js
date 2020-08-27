@@ -22,7 +22,8 @@ export const Catalog = (harvestResult) => {
   for (const food of foods) {
     plantID++;
     thingToGoOnPage += `
-            <section class="plant"> ${food.icon} 
+            <section class="plant">
+            <h3> ${food.icon} </h3>
             <p>id: ${plantID}</section>
         `;
   }
