@@ -1,9 +1,10 @@
 export const createAsparagus = () => {
-    const asparagus = {
-        type: "Asparagus",
-        height: 24,
-        output: 4
-    }
+  const asparagus = {
+    type: "Asparagus",
+    icon: "🌳",
+    height: 24,
+    output: 4,
+  };
 
-    return asparagus
-}
+  return asparagus;
+};
