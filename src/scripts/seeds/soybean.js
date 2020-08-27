@@ -1,9 +1,10 @@
 export const createSoybean = () => {
-    const soybean = {
-        type: "Soybean",
-        height: 20,
-        output: 4
-    }
+  const soybean = {
+    type: "Soybean",
+    icon: "🥜",
+    height: 20,
+    output: 4,
+  };
 
-    return soybean
-}
+  return soybean;
+};
