@@ -12,12 +12,6 @@ import { harvestPlants } from "./harvester.js";
 const usedPlants = usePlants();
 const harvestedPlants = harvestPlants(usedPlants);
 
-// let seedID = 0;
-
-// for (const plant in harvestedPlants) {
-//   plant.id = seedID++;
-// }
-
 export const Catalog = (harvestResult) => {
   let pageElement = document.querySelector(".container");
   let foods = harvestedPlants;
@@ -36,4 +30,37 @@ export const Catalog = (harvestResult) => {
   pageElement.innerHTML += `
     ${thingToGoOnPage}
     `;
+};
+
+export const foodTotals = (harvestResult) => {
+  let tallyThatFood = {
+    asparagus: 0,
+    corn: 0,
+    potato: 0,
+    soybean: 0,
+    sunflower: 0,
+    wheat: 0,
+  };
+
+  for (const item of harvestedPlants) {
+    if (item.type === "Asparagus") {
+      tallyThatFood.asparagus++;
+    } else if (item.type === "Corn") {
+      tallyThatFood.corn++;
+    } else if (item.type === "Potato") {
+      tallyThatFood.potato++;
+    } else if (item.type === "Soybean") {
+      tallyThatFood.soybean++;
+    } else if (item.type === "Sunflower") {
+      tallyThatFood.sunflower++;
+    } else if (item.type === "Wheat") {
+      tallyThatFood.wheat++;
+    } else {
+      console.log(
+        "something is wrong with food totals array, you should fix that"
+      );
+    }
+  }
+
+  return tallyThatFood;
 };

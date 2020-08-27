@@ -4,7 +4,6 @@ export const createSunflower = () => {
     icon: "🌻",
     height: 380,
     output: 3,
-    id: 0,
   };
 
   return sunflower;

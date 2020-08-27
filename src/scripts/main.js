@@ -29,3 +29,7 @@ console.log(harvestResult);
 import { Catalog } from "./catalog.js";
 Catalog();
 // console.log(catalogOutput);
+
+import { inventoryList } from "./inventory.js";
+const contentElement = document.querySelector(".inventory");
+contentElement.innerHTML += inventoryList();
